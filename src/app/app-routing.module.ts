@@ -5,6 +5,7 @@ import { ProduitsIndexComponent } from './GererProduit/produits-index/produits-i
 import { ModifierProduitsComponent } from './GererProduit/modifier-produits/modifier-produits.component';
 
 const routes: Routes = [
+  {  path:'',  redirectTo :'ListeProduit' , pathMatch: 'full', },
   {  path:'ListeProduit',  component:ProduitsIndexComponent},
   {  path:'AjouterProduit',  component:AjouterProduitComponent},
   {  path:'ModifierProduit/:id',  component:ModifierProduitsComponent}
